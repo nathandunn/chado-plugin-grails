@@ -9,11 +9,12 @@ class ChadoGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Chado Plugin Plugin" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
+    def title = "Chado Plugin for Grails" // Headline display name of the plugin
+    def author = "Nathan Dunn"
+    def authorEmail = "nathandunn@lbl.gov"
     def description = '''\
-Brief summary/description of the plugin.
+	A grails plugin for the chado biological schema.   Used for interacting with a chado database.
+    http://gmod.org/wiki/Chado_-_Getting_Started
 '''
 
     // URL to the plugin's documentation
@@ -25,7 +26,7 @@ Brief summary/description of the plugin.
 //    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "Apollo", url: "http://genomearchitect.org" ]
 
     // Any additional developers beyond the author specified above.
 //    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]

@@ -17,7 +17,7 @@ Brief summary/description of the plugin.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/chado-plugin"
+    def documentation = "http://grails.org/plugin/chado"
 
     // Extra (optional) plugin metadata
 

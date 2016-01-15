@@ -3,7 +3,7 @@
   <title>Chado Plugin Plugin</title>
   <description>Brief summary/description of the plugin.
 </description>
-  <documentation>http://grails.org/plugin/chado-plugin</documentation>
+  <documentation>http://grails.org/plugin/chado</documentation>
   <type>ChadoPluginGrailsPlugin</type>
   <resources>
     <resource>org.gmod.chado.AllFeatureNames</resource>

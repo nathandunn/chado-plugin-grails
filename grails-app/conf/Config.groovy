@@ -1,5 +1,26 @@
 // configuration for plugin testing - will not be included in the plugin zip
 
+grails.plugin.reveng.packageName = "org.gmod.chado"
+
+//grails.plugin.reveng.includeTables = [
+//        "cvterm"
+//        ,"cvtermdbxref"
+//        ,"db"
+//        ,"dbxref"
+//        ,"feature"
+////        ,"feature_phenotype"
+////        ,"feature_genotype"
+//        ,"feature_cvterm"
+//        ,"feature_synonym"
+//        ,"feature_relationship"
+//        ,"featureloc"
+////        ,"genotype"
+//        ,"organism"
+//        ,"pub"
+//        ,"pub_relationship"
+//        ,"synonym"
+//]
+
 log4j = {
     // Example of changing the log pattern for the default console
     // appender:

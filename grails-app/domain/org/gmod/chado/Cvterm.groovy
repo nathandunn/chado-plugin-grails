@@ -151,6 +151,6 @@ class Cvterm {
 		name maxSize: 1024
 		definition nullable: true
 //		isObsolete unique: ["cv_id", "name"]
-        isObsolete unique: ["cv", "name"]
+//        isObsolete unique: ["cv", "name"]
 	}
 }

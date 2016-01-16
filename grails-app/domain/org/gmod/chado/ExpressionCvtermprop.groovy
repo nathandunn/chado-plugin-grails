@@ -16,6 +16,7 @@ class ExpressionCvtermprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "expression_cvterm_id"]
+//		rank unique: ["type_id", "expression_cvterm_id"]
+		rank unique: ["cvterm", "expressionCvterm"]
 	}
 }

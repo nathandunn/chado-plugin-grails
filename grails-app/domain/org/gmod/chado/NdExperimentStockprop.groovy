@@ -16,6 +16,7 @@ class NdExperimentStockprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "nd_experiment_stock_id"]
+//		rank unique: ["type_id", "nd_experiment_stock_id"]
+		rank unique: ["cvterm", "ndExperimentStock"]
 	}
 }

@@ -16,6 +16,7 @@ class NdProtocolprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "nd_protocol_id"]
+//		rank unique: ["type_id", "nd_protocol_id"]
+		rank unique: ["cvterm", "ndProtocol"]
 	}
 }

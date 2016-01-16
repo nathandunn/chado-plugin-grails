@@ -19,6 +19,7 @@ class StockRelationship {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "object_id", "subject_id"]
+//		rank unique: ["type_id", "object_id", "subject_id"]
+		rank unique: ["cvterm", "stockByObjectId", "stockBySubjectId"]
 	}
 }

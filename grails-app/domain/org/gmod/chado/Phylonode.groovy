@@ -31,8 +31,10 @@ class Phylonode {
 	}
 
 	static constraints = {
-		leftIdx unique: ["phylotree_id"]
-		rightIdx unique: ["phylotree_id"]
+//		leftIdx unique: ["phylotree_id"]
+//		rightIdx unique: ["phylotree_id"]
+		leftIdx unique: ["phylotree"]
+		rightIdx unique: ["phylotree"]
 		label nullable: true
 		distance nullable: true, scale: 17
 	}

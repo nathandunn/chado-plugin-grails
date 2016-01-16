@@ -17,7 +17,8 @@ class Pubauthor {
 	}
 
 	static constraints = {
-		rank unique: ["pub_id"]
+//		rank unique: ["pub_id"]
+		rank unique: ["pub"]
 		editor nullable: true
 		surname maxSize: 100
 		givennames nullable: true, maxSize: 100

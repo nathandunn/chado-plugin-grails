@@ -14,6 +14,7 @@ class PhenotypeCvterm {
 	}
 
 	static constraints = {
-		rank unique: ["cvterm_id", "phenotype_id"]
+//		rank unique: ["cvterm_id", "phenotype_id"]
+		rank unique: ["cvterm", "phenotype"]
 	}
 }

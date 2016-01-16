@@ -16,6 +16,7 @@ class FeatureCvtermprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "feature_cvterm_id"]
+//		rank unique: ["type_id", "feature_cvterm_id"]
+		rank unique: ["cvterm", "featureCvterm"]
 	}
 }

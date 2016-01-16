@@ -16,6 +16,7 @@ class FeaturePubprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "feature_pub_id"]
+//		rank unique: ["type_id", "feature_pub_id"]
+		rank unique: ["cvterm", "featurePub"]
 	}
 }

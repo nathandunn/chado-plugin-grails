@@ -14,6 +14,7 @@ class Cvtermsynonym {
 	}
 
 	static constraints = {
-		synonym maxSize: 1024, unique: ["cvterm_id"]
+//		synonym maxSize: 1024, unique: ["cvterm_id"]
+		synonym maxSize: 1024, unique: ["cvtermByCvtermId"]
 	}
 }

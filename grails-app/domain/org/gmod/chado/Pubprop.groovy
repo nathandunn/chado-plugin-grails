@@ -15,6 +15,7 @@ class Pubprop {
 	}
 
 	static constraints = {
-		rank nullable: true, unique: ["type_id", "pub_id"]
+//		rank nullable: true, unique: ["type_id", "pub_id"]
+		rank nullable: true, unique: ["cvterm", "pub"]
 	}
 }

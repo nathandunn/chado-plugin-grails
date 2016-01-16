@@ -19,6 +19,7 @@ class FeatureCvterm {
 	}
 
 	static constraints = {
-		rank unique: ["pub_id", "cvterm_id", "feature_id"]
+//		rank unique: ["pub_id", "cvterm_id", "feature_id"]
+		rank unique: ["pub", "cvterm", "feature"]
 	}
 }

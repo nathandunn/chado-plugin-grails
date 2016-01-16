@@ -17,6 +17,7 @@ class Stockprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "stock_id"]
+//		rank unique: ["type_id", "stock_id"]
+		rank unique: ["cvterm", "stock"]
 	}
 }

@@ -17,6 +17,7 @@ class FeatureGenotype {
 	}
 
 	static constraints = {
-		cgroup unique: ["rank", "chromosome_id", "cvterm_id", "genotype_id", "feature_id"]
+//		cgroup unique: ["rank", "chromosome_id", "cvterm_id", "genotype_id", "feature_id"]
+		cgroup unique: ["rank", "featureByChromosomeId", "cvterm", "genotype", "featureByFeatureId"]
 	}
 }

@@ -16,6 +16,7 @@ class Organismprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "organism_id"]
+//		rank unique: ["type_id", "organism_id"]
+		rank unique: ["cvterm", "organism"]
 	}
 }

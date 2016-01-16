@@ -15,6 +15,7 @@ class Dbxrefprop {
 	}
 
 	static constraints = {
-		rank unique: ["type_id", "dbxref_id"]
+//		rank unique: ["type_id", "dbxref_id"]
+		rank unique: ["cvterm", "dbxref"]
 	}
 }

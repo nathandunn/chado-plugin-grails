@@ -16,6 +16,7 @@ class Cvtermpath {
 	}
 
 	static constraints = {
-		pathdistance nullable: true, unique: ["type_id", "object_id", "subject_id"]
+//		pathdistance nullable: true, unique: ["type_id", "object_id", "subject_id"]
+		pathdistance nullable: true, unique: ["cv", "cvtermByObjectId", "cvtermBySubjectId"]
 	}
 }

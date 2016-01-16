@@ -36,6 +36,7 @@ class GffIntervalStats implements Serializable {
 
 	static constraints = {
 		typeid maxSize: 1024
-		bin unique: ["srcfeature_id", "typeid"]
+//		bin unique: ["srcfeature_id", "typeid"]
+		bin unique: ["srcfeatureId", "typeid"]
 	}
 }

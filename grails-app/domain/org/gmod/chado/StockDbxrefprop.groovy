@@ -16,6 +16,7 @@ class StockDbxrefprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "stock_dbxref_id"]
+//		rank unique: ["type_id", "stock_dbxref_id"]
+		rank unique: ["cvterm", "stockDbxref"]
 	}
 }

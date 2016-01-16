@@ -16,6 +16,6 @@ class Genotypeprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "genotype_id"]
+		rank unique: ["cvterm", "genotype"]
 	}
 }

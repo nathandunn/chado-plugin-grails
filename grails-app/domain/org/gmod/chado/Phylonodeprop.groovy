@@ -15,6 +15,7 @@ class Phylonodeprop {
 	}
 
 	static constraints = {
-		rank unique: ["value", "type_id", "phylonode_id"]
+//		rank unique: ["value", "type_id", "phylonode_id"]
+		rank unique: ["value", "cvterm", "phylonode"]
 	}
 }

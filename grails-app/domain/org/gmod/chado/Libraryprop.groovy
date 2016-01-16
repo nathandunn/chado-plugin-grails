@@ -17,6 +17,7 @@ class Libraryprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "library_id"]
+//		rank unique: ["type_id", "library_id"]
+		rank unique: ["cvterm", "library"]
 	}
 }

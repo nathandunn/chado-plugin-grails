@@ -16,6 +16,7 @@ class NdReagentprop {
 
 	static constraints = {
 		value nullable: true
-		rank unique: ["type_id", "nd_reagent_id"]
+//		rank unique: ["type_id", "nd_reagent_id"]
+		rank unique: ["cvterm", "ndReagent"]
 	}
 }

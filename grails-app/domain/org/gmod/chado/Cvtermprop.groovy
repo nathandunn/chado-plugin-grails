@@ -15,6 +15,7 @@ class Cvtermprop {
 	}
 
 	static constraints = {
-		rank unique: ["value", "type_id", "cvterm_id"]
+//		rank unique: ["value", "type_id", "cvterm_id"]
+		rank unique: ["value", "cvtermByTypeId", "cvtermByCvtermId"]
 	}
 }

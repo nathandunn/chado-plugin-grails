@@ -119,26 +119,28 @@ class Cvterm {
 
 	// TODO you have multiple hasMany references for class(es) [Arraydesign, CvtermRelationship, Cvtermpath, Cvtermprop, Cvtermsynonym, ExpressionCvterm, Phenotype, Protocolparam] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [arraydesignsForPlatformtypeId: "TODO",
-	                   arraydesignsForSubstratetypeId: "TODO",
-	                   cvtermRelationshipsForObjectId: "TODO",
-	                   cvtermRelationshipsForSubjectId: "TODO",
-	                   cvtermRelationshipsForTypeId: "TODO",
-	                   cvtermpathsForObjectId: "TODO",
-	                   cvtermpathsForSubjectId: "TODO",
-	                   cvtermpathsForTypeId: "TODO",
-	                   cvtermpropsForCvtermId: "TODO",
-	                   cvtermpropsForTypeId: "TODO",
-	                   cvtermsynonymsForCvtermId: "TODO",
-	                   cvtermsynonymsForTypeId: "TODO",
-	                   expressionCvtermsForCvtermId: "TODO",
-	                   expressionCvtermsForCvtermTypeId: "TODO",
-	                   phenotypesForAssayId: "TODO",
-	                   phenotypesForAttrId: "TODO",
-	                   phenotypesForCvalueId: "TODO",
-	                   phenotypesForObservableId: "TODO",
-	                   protocolparamsForDatatypeId: "TODO",
-	                   protocolparamsForUnittypeId: "TODO"]
+	static mappedBy = [
+//			arraydesignsForPlatformtypeId: "TODO",
+//	                   arraydesignsForSubstratetypeId: "TODO",
+	                   cvtermRelationshipsForObjectId: "cvtermByObjectId",
+	                   cvtermRelationshipsForSubjectId: "cvtermBySubjectId",
+	                   cvtermRelationshipsForTypeId: "cvtermByTypeId",
+	                   cvtermpathsForObjectId: "cvtermByObjectId",
+	                   cvtermpathsForSubjectId: "cvtermBySubjectId",
+	                   cvtermpathsForTypeId: "cvtermByTypeId",
+	                   cvtermpropsForCvtermId: "cvtermByCvtermId",
+	                   cvtermpropsForTypeId: "cvtermByTypeId",
+	                   cvtermsynonymsForCvtermId: "cvtermByCvtermId",
+	                   cvtermsynonymsForTypeId: "cvtermByTypeId",
+	                   expressionCvtermsForCvtermId: "cvtermByCvtermId",
+	                   expressionCvtermsForCvtermTypeId: "cvtermByCvtermTypeId",
+	                   phenotypesForAssayId: "cvtermByAssayId",
+	                   phenotypesForAttrId: "cvtermByAttrId",
+	                   phenotypesForCvalueId: "cvtermByCvalueId",
+	                   phenotypesForObservableId: "cvtermByObservableId"
+//	                   protocolparamsForDatatypeId: "TODO",
+//	                   protocolparamsForUnittypeId: "TODO"
+	]
 
 	static mapping = {
 		id column: "cvterm_id", generator: "assigned"

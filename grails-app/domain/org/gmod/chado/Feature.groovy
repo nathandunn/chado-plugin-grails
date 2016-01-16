@@ -47,19 +47,19 @@ class Feature {
 
 	// TODO you have multiple hasMany references for class(es) [FeatureGenotype, FeatureRelationship, Featureloc, Featurepos, Featurerange] 
 	//      so you'll need to disambiguate them with the 'mappedBy' property:
-	static mappedBy = [featureGenotypesForChromosomeId: "TODO",
-	                   featureGenotypesForFeatureId: "TODO",
-	                   featureRelationshipsForObjectId: "TODO",
-	                   featureRelationshipsForSubjectId: "TODO",
-	                   featurelocsForFeatureId: "TODO",
-	                   featurelocsForSrcfeatureId: "TODO",
-	                   featureposesForFeatureId: "TODO",
-	                   featureposesForMapFeatureId: "TODO",
-	                   featurerangesForFeatureId: "TODO",
-	                   featurerangesForLeftendfId: "TODO",
-	                   featurerangesForLeftstartfId: "TODO",
-	                   featurerangesForRightendfId: "TODO",
-	                   featurerangesForRightstartfId: "TODO"]
+	static mappedBy = [featureGenotypesForChromosomeId: "featureByChromosomeId",
+	                   featureGenotypesForFeatureId: "featureByFeatureId",
+	                   featureRelationshipsForObjectId: "featureByObjectId",
+	                   featureRelationshipsForSubjectId: "featureBySubjectId",
+	                   featurelocsForFeatureId: "featureByFeatureId",
+	                   featurelocsForSrcfeatureId: "featureBySrcfeatureId",
+	                   featureposesForFeatureId: "featureByFeatureId",
+	                   featureposesForMapFeatureId: "featureByMapFeatureId",
+	                   featurerangesForFeatureId: "featureByFeatureId",
+	                   featurerangesForLeftendfId: "featureByLeftendfId",
+	                   featurerangesForLeftstartfId: "featureByLeftstartfId",
+	                   featurerangesForRightendfId: "featureByRightendfId",
+	                   featurerangesForRightstartfId: "featureByRightstartfId"]
 
 	static mapping = {
 		id column: "feature_id", generator: "assigned"

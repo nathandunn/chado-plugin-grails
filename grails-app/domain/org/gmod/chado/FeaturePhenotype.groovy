@@ -2,13 +2,14 @@ package org.gmod.chado
 
 class FeaturePhenotype {
 
-	Feature feature
-	Phenotype phenotype
+    Feature feature
+    Phenotype phenotype
 
-	static belongsTo = [Feature, Phenotype]
+    static belongsTo = [Feature, Phenotype]
 
-	static mapping = {
-		id column: "feature_phenotype_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "feature_phenotype_id", generator: "assigned"
+        version false
+    }
 }

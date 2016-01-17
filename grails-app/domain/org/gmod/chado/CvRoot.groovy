@@ -5,31 +5,32 @@ import org.apache.commons.lang.builder.HashCodeBuilder
 
 class CvRoot implements Serializable {
 
-	Integer cvId
-	Integer rootCvtermId
+    Integer cvId
+    Integer rootCvtermId
 
-	int hashCode() {
-		def builder = new HashCodeBuilder()
-		builder.append cvId
-		builder.append rootCvtermId
-		builder.toHashCode()
-	}
+    int hashCode() {
+        def builder = new HashCodeBuilder()
+        builder.append cvId
+        builder.append rootCvtermId
+        builder.toHashCode()
+    }
 
-	boolean equals(other) {
-		if (other == null) return false
-		def builder = new EqualsBuilder()
-		builder.append cvId, other.cvId
-		builder.append rootCvtermId, other.rootCvtermId
-		builder.isEquals()
-	}
+    boolean equals(other) {
+        if (other == null) return false
+        def builder = new EqualsBuilder()
+        builder.append cvId, other.cvId
+        builder.append rootCvtermId, other.rootCvtermId
+        builder.isEquals()
+    }
 
-	static mapping = {
-		id composite: ["cvId", "rootCvtermId"]
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id composite: ["cvId", "rootCvtermId"]
+        version false
+    }
 
-	static constraints = {
-		cvId nullable: true
-		rootCvtermId nullable: true
-	}
+    static constraints = {
+        cvId nullable: true
+        rootCvtermId nullable: true
+    }
 }

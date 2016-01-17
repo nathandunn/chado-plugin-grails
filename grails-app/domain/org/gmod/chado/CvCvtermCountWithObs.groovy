@@ -5,31 +5,32 @@ import org.apache.commons.lang.builder.HashCodeBuilder
 
 class CvCvtermCountWithObs implements Serializable {
 
-	String name
-	Long numTermsInclObs
+    String name
+    Long numTermsInclObs
 
-	int hashCode() {
-		def builder = new HashCodeBuilder()
-		builder.append name
-		builder.append numTermsInclObs
-		builder.toHashCode()
-	}
+    int hashCode() {
+        def builder = new HashCodeBuilder()
+        builder.append name
+        builder.append numTermsInclObs
+        builder.toHashCode()
+    }
 
-	boolean equals(other) {
-		if (other == null) return false
-		def builder = new EqualsBuilder()
-		builder.append name, other.name
-		builder.append numTermsInclObs, other.numTermsInclObs
-		builder.isEquals()
-	}
+    boolean equals(other) {
+        if (other == null) return false
+        def builder = new EqualsBuilder()
+        builder.append name, other.name
+        builder.append numTermsInclObs, other.numTermsInclObs
+        builder.isEquals()
+    }
 
-	static mapping = {
-		id composite: ["name", "numTermsInclObs"]
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id composite: ["name", "numTermsInclObs"]
+        version false
+    }
 
-	static constraints = {
-		name nullable: true
-		numTermsInclObs nullable: true
-	}
+    static constraints = {
+        name nullable: true
+        numTermsInclObs nullable: true
+    }
 }

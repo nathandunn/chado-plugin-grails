@@ -2,13 +2,14 @@ package org.gmod.chado
 
 class PhylotreePub {
 
-	Pub pub
-	Phylotree phylotree
+    Pub pub
+    Phylotree phylotree
 
-	static belongsTo = [Phylotree, Pub]
+    static belongsTo = [Phylotree, Pub]
 
-	static mapping = {
-		id column: "phylotree_pub_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "phylotree_pub_id", generator: "assigned"
+        version false
+    }
 }

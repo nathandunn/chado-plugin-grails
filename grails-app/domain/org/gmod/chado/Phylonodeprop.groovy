@@ -2,20 +2,21 @@ package org.gmod.chado
 
 class Phylonodeprop {
 
-	String value
-	Integer rank
-	Phylonode phylonode
-	Cvterm cvterm
+    String value
+    Integer rank
+    Phylonode phylonode
+    Cvterm cvterm
 
-	static belongsTo = [Cvterm, Phylonode]
+    static belongsTo = [Cvterm, Phylonode]
 
-	static mapping = {
-		id column: "phylonodeprop_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "phylonodeprop_id", generator: "assigned"
+        version false
+    }
 
-	static constraints = {
+    static constraints = {
 //		rank unique: ["value", "type_id", "phylonode_id"]
-		rank unique: ["value", "cvterm", "phylonode"]
-	}
+        rank unique: ["value", "cvterm", "phylonode"]
+    }
 }

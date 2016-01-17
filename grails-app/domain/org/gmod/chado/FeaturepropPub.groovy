@@ -2,13 +2,14 @@ package org.gmod.chado
 
 class FeaturepropPub {
 
-	Pub pub
-	Featureprop featureprop
+    Pub pub
+    Featureprop featureprop
 
-	static belongsTo = [Featureprop, Pub]
+    static belongsTo = [Featureprop, Pub]
 
-	static mapping = {
-		id column: "featureprop_pub_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "featureprop_pub_id", generator: "assigned"
+        version false
+    }
 }

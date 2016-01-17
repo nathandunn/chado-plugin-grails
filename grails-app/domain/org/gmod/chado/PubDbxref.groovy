@@ -2,14 +2,15 @@ package org.gmod.chado
 
 class PubDbxref {
 
-	Boolean isCurrent
-	Pub pub
-	Dbxref dbxref
+    Boolean isCurrent
+    Pub pub
+    Dbxref dbxref
 
-	static belongsTo = [Dbxref, Pub]
+    static belongsTo = [Dbxref, Pub]
 
-	static mapping = {
-		id column: "pub_dbxref_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "pub_dbxref_id", generator: "assigned"
+        version false
+    }
 }

@@ -9,19 +9,10 @@
   <type>ChadoGrailsPlugin</type>
   <resources>
     <resource>org.gmod.chado.AllFeatureNames</resource>
-    <resource>org.gmod.chado.Analysis</resource>
-    <resource>org.gmod.chado.AnalysisOrganism</resource>
-    <resource>org.gmod.chado.Analysisfeature</resource>
-    <resource>org.gmod.chado.Analysisfeatureprop</resource>
-    <resource>org.gmod.chado.Analysisprop</resource>
     <resource>org.gmod.chado.ApplicationMetadata</resource>
-    <resource>org.gmod.chado.BlastHitData</resource>
-    <resource>org.gmod.chado.BlastOrganisms</resource>
     <resource>org.gmod.chado.Chadoprop</resource>
     <resource>org.gmod.chado.CommonAncestorCvterm</resource>
     <resource>org.gmod.chado.CommonDescendantCvterm</resource>
-    <resource>org.gmod.chado.Contact</resource>
-    <resource>org.gmod.chado.ContactRelationship</resource>
     <resource>org.gmod.chado.Cv</resource>
     <resource>org.gmod.chado.CvCvtermCount</resource>
     <resource>org.gmod.chado.CvCvtermCountWithObs</resource>
@@ -94,36 +85,6 @@
     <resource>org.gmod.chado.GoCountOrganism</resource>
     <resource>org.gmod.chado.IntronCombinedView</resource>
     <resource>org.gmod.chado.IntronlocView</resource>
-    <resource>org.gmod.chado.KeggByOrganism</resource>
-    <resource>org.gmod.chado.Library</resource>
-    <resource>org.gmod.chado.LibraryCvterm</resource>
-    <resource>org.gmod.chado.LibraryDbxref</resource>
-    <resource>org.gmod.chado.LibraryFeature</resource>
-    <resource>org.gmod.chado.LibraryPub</resource>
-    <resource>org.gmod.chado.LibrarySynonym</resource>
-    <resource>org.gmod.chado.Libraryprop</resource>
-    <resource>org.gmod.chado.LibrarypropPub</resource>
-    <resource>org.gmod.chado.MaterializedView</resource>
-    <resource>org.gmod.chado.NdExperiment</resource>
-    <resource>org.gmod.chado.NdExperimentContact</resource>
-    <resource>org.gmod.chado.NdExperimentDbxref</resource>
-    <resource>org.gmod.chado.NdExperimentGenotype</resource>
-    <resource>org.gmod.chado.NdExperimentPhenotype</resource>
-    <resource>org.gmod.chado.NdExperimentProject</resource>
-    <resource>org.gmod.chado.NdExperimentProtocol</resource>
-    <resource>org.gmod.chado.NdExperimentPub</resource>
-    <resource>org.gmod.chado.NdExperimentStock</resource>
-    <resource>org.gmod.chado.NdExperimentStockDbxref</resource>
-    <resource>org.gmod.chado.NdExperimentStockprop</resource>
-    <resource>org.gmod.chado.NdExperimentprop</resource>
-    <resource>org.gmod.chado.NdGeolocation</resource>
-    <resource>org.gmod.chado.NdGeolocationprop</resource>
-    <resource>org.gmod.chado.NdProtocol</resource>
-    <resource>org.gmod.chado.NdProtocolReagent</resource>
-    <resource>org.gmod.chado.NdProtocolprop</resource>
-    <resource>org.gmod.chado.NdReagent</resource>
-    <resource>org.gmod.chado.NdReagentRelationship</resource>
-    <resource>org.gmod.chado.NdReagentprop</resource>
     <resource>org.gmod.chado.Organism</resource>
     <resource>org.gmod.chado.OrganismDbxref</resource>
     <resource>org.gmod.chado.OrganismFeatureCount</resource>
@@ -142,32 +103,12 @@
     <resource>org.gmod.chado.Phylonodeprop</resource>
     <resource>org.gmod.chado.Phylotree</resource>
     <resource>org.gmod.chado.PhylotreePub</resource>
-    <resource>org.gmod.chado.Project</resource>
-    <resource>org.gmod.chado.ProjectContact</resource>
-    <resource>org.gmod.chado.ProjectPub</resource>
-    <resource>org.gmod.chado.ProjectRelationship</resource>
-    <resource>org.gmod.chado.Projectprop</resource>
     <resource>org.gmod.chado.Pub</resource>
     <resource>org.gmod.chado.PubDbxref</resource>
     <resource>org.gmod.chado.PubRelationship</resource>
     <resource>org.gmod.chado.Pubauthor</resource>
     <resource>org.gmod.chado.Pubprop</resource>
     <resource>org.gmod.chado.StatsPathsToRoot</resource>
-    <resource>org.gmod.chado.Stock</resource>
-    <resource>org.gmod.chado.StockCvterm</resource>
-    <resource>org.gmod.chado.StockCvtermprop</resource>
-    <resource>org.gmod.chado.StockDbxref</resource>
-    <resource>org.gmod.chado.StockDbxrefprop</resource>
-    <resource>org.gmod.chado.StockGenotype</resource>
-    <resource>org.gmod.chado.StockPub</resource>
-    <resource>org.gmod.chado.StockRelationship</resource>
-    <resource>org.gmod.chado.StockRelationshipCvterm</resource>
-    <resource>org.gmod.chado.StockRelationshipPub</resource>
-    <resource>org.gmod.chado.Stockcollection</resource>
-    <resource>org.gmod.chado.StockcollectionStock</resource>
-    <resource>org.gmod.chado.Stockcollectionprop</resource>
-    <resource>org.gmod.chado.Stockprop</resource>
-    <resource>org.gmod.chado.StockpropPub</resource>
     <resource>org.gmod.chado.Synonym</resource>
     <resource>org.gmod.chado.TypeFeatureCount</resource>
   </resources>

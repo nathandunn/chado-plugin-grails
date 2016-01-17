@@ -2,24 +2,25 @@ package org.gmod.chado
 
 class FeatureCvterm {
 
-	Boolean isNot
-	Integer rank
-	Pub pub
-	Feature feature
-	Cvterm cvterm
+    Boolean isNot
+    Integer rank
+    Pub pub
+    Feature feature
+    Cvterm cvterm
 
-	static hasMany = [featureCvtermDbxrefs: FeatureCvtermDbxref,
-	                  featureCvtermPubs: FeatureCvtermPub,
-	                  featureCvtermprops: FeatureCvtermprop]
-	static belongsTo = [Cvterm, Feature, Pub]
+    static hasMany = [featureCvtermDbxrefs: FeatureCvtermDbxref,
+                      featureCvtermPubs   : FeatureCvtermPub,
+                      featureCvtermprops  : FeatureCvtermprop]
+    static belongsTo = [Cvterm, Feature, Pub]
 
-	static mapping = {
-		id column: "feature_cvterm_id", generator: "assigned"
-		version false
-	}
+    static mapping = {
+        datasource "chado"
+        id column: "feature_cvterm_id", generator: "assigned"
+        version false
+    }
 
-	static constraints = {
+    static constraints = {
 //		rank unique: ["pub_id", "cvterm_id", "feature_id"]
-		rank unique: ["pub", "cvterm", "feature"]
-	}
+        rank unique: ["pub", "cvterm", "feature"]
+    }
 }

@@ -26,7 +26,7 @@ log4j = {
           'net.sf.ehcache.hibernate'
 }
 
-grails.cache.config.cache.enabled = false
+//grails.cache.config.cache.enabled = false
 
 //grails.cache.config = {
 //    // avoid ehcache naming conflict to run multiple WA instances

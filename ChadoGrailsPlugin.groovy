@@ -1,3 +1,8 @@
+
+//import org.springframework.cache.ehcache.EhCacheFactoryBean
+//import org.springframework.cache.ehcache.EhCacheManagerFactoryBean
+
+
 class ChadoGrailsPlugin {
     def version = "0.1"
     def grailsVersion = "2.4 > *"
@@ -10,4 +15,19 @@ class ChadoGrailsPlugin {
     def organization = [name: "Apollo", url: "http://genomearchitect.org"]
     def issueManagement = [url: 'https://github.com/GMOD/chado-plugin-grails/issues']
     def scm = [url: 'https://github.com/GMOD/chado-plugin-grails']
+
+    def doWithSpring = {
+//        ReflectionUtils.application = application
+//        def conf = SpringSecurityUtils.securityConfig
+
+        println "Loading Chado Domains ..."
+
+//        cacheManager(EhCacheManagerFactoryBean) {
+//            cacheManager = ref('cacheManager')
+//            cacheManager(EhCacheManagerFactoryBean) {
+//                cacheManagerName = 'chado-' + UUID.randomUUID()
+//            }
+//        }
+
+    }
 }
